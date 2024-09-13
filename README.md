@@ -1,6 +1,7 @@
 # Target tracker
 This code uses feature detection and matching to track an objects. It starts by loading a target image and then detects features in both the target and each frame of the video. Then match these features to find the target in the video, filters out bad matches, and computes the average position of the good matches.
 
+Still a work in progress**
 ![](assets/results.gif)
 
 ## To run:
