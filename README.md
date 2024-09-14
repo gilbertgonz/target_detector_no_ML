@@ -1,4 +1,4 @@
-# Target detection with no ML
+# Target detection using no ML
 This code uses feature detection and matching to detect a target object. Old concept, but still pretty cool to see run in almost real-time.
 
 ## Overview
