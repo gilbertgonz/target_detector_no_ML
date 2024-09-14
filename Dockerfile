@@ -10,7 +10,6 @@ RUN apt update && apt install -y \
 COPY main.cpp /main.cpp
 COPY CMakeLists.txt /CMakeLists.txt
 COPY assets/ /assets/
-COPY imgs/ /imgs/
 
 RUN mkdir build && cd build \
     && cmake .. && make
