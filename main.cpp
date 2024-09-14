@@ -80,6 +80,7 @@ int main() {
     int prev_x_avg;
     int prev_y_avg;
     int delay = 1;
+    int frame_number = 0;
     while (true) {
         // Read
         cap.read(img2);
@@ -160,6 +161,13 @@ int main() {
 
         // Show image
         cv::imshow("img2", img2);
+        
+        char frame_filename[50]; // Buffer to hold the filename
+        std::sprintf(frame_filename, "/imgs/frame_%05d.jpg", frame_number);
+
+        cv::imwrite(frame_filename, img2);
+        frame_number++;
+        
         // cv::imshow("img1", img1); // for debugging
         if (!img2_roi.empty()) cv::imshow("img2_roi", img2_roi); // for debugging
 

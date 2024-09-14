@@ -35,6 +35,6 @@ def create_video_from_images(image_dir, output_video_path, frame_rate=30):
     print(f"Video saved to {output_video_path}")
 
 # Usage
-image_directory = "/home/gilberto/Downloads/VisDrone2019-VID-val/sequences/uav0000137_00458_v"
-output_video_file = "./assets/vid2.mp4"
+image_directory = "../imgs"
+output_video_file = "./assets/result.mp4"
 create_video_from_images(image_directory, output_video_file)
