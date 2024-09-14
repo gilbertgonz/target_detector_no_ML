@@ -35,3 +35,6 @@ $ docker build -t target_detector .
 $ xhost +local:docker
 $ docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix target_detector
 ```
+
+## Dataset:
+https://github.com/VisDrone/VisDrone-Dataset?tab=readme-ov-file
