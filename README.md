@@ -20,6 +20,8 @@ This code uses feature detection and matching to detect a target object. Old con
 
 * Tried to dynamically update the reference image since the reference/target can change over time, but this proved to be unstable in fast-moving scenarios. Might revisit later.
 
+* Also tried dynamically adjusting the bounding box based on coordinates of feature detections, but proved to be unstable with too few matches, making the ROI too small for detections.
+
 ## To run:
 1. Install [docker](https://docs.docker.com/engine/install/)
 
