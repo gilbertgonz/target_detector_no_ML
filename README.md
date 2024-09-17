@@ -10,7 +10,7 @@ This code uses feature detection and matching to detect a target object. Old con
 6. Reduce and update ROI for feature detection once target is found
 7. Repeat 3-6 
 
-* idea for future: implement KF tracking to estimate roi even if no detections
+* idea for future: implement KF track and smooth detections
 
 ## Results
 ![](assets/results.gif)
