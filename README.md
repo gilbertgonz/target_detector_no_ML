@@ -21,6 +21,11 @@ This code uses feature detection and matching to detect a target object. Old con
 * Tried to dynamically update the reference image since the reference/target can change over time, but this proved to be unstable in fast-moving scenarios. Might revisit later.
 
 * Also tried dynamically adjusting the bounding box based on coordinates of feature detections, but proved to be unstable in scenarios with too few matches which made the ROI too small for detections.
+  * **However**, in scenarios where the camera was intentionally following the target, like in sports replays, etc., results were more promising, see below for results after some tweaking with parameters:
+
+![](assets/result2.gif)
+
+As you can see on the bottom right, the "reference" image is being updated dynamically, instead of just referencing a single image like the previous example was doing.
 
 ## To run:
 1. Install [docker](https://docs.docker.com/engine/install/)
